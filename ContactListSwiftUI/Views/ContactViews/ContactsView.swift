@@ -17,7 +17,7 @@ struct ContactsView: View {
             VStack {
                 List(contact) { contact in
                     NavigationLink(destination: ContactInfoView(contact: contact)) { //  тут мы указываем куда идем
-                        ContactRowView(person: contact) // тут у нас вьюха с настроенным текстом для таблицы для этого табличного представления.
+                        ContactRowView(contact: contact) // тут у нас вьюха с настроенным текстом для таблицы для этого табличного представления.
                     }
                 }
             }

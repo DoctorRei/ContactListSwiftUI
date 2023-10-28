@@ -64,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				E997BD9B2AEC2E5900B866D4 /* ContactListSwiftUIApp.swift */,
-				E997BD9D2AEC2E5900B866D4 /* ContentView.swift */,
 				E997BDB42AEC314100B866D4 /* Views */,
 				E997BDAB2AEC2EE300B866D4 /* Services */,
 				E9A010222AED2B16005CF40E /* Model */,
@@ -93,6 +92,7 @@
 		E997BDB42AEC314100B866D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E997BD9D2AEC2E5900B866D4 /* ContentView.swift */,
 				E9A010232AED2C69005CF40E /* ContactViews */,
 				E9A010242AED2C78005CF40E /* NumbersView */,
 			);

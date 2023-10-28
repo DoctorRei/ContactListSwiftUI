@@ -9,17 +9,17 @@ import SwiftUI
 
 struct ContactRowView: View {
     
-    let person: Person
+    let contact: Person
     
     var body: some View {
         HStack {
-            Text("\(person.fullName)")
+            Text("\(contact.fullName)")
         }
     }
 }
 
 struct ContactRowView_Previews: PreviewProvider {
     static var previews: some View {
-        ContactRowView(person: Person(name: "Hello", seccondName: "Misha", email: "Akira", phoneNumber: "787878"))
+        ContactRowView(contact: Person(name: "Hello", seccondName: "Misha", email: "Akira", phoneNumber: "787878"))
     }
 }

@@ -9,13 +9,13 @@ import SwiftUI
 
 struct Person: Identifiable {
     
-    let id = UUID()  // Я понимаю, что это костыль. Но у меня сложилась ситуация, что я получал только 1 элемент массива. Проблема была с айдишником. Так что пусть генерирует че хочет, мне это свойство нужно лишь чтобы протокол подписать.
+    let id = UUID()
     
-    var name: String
-    var seccondName: String
+    let name: String
+    let seccondName: String
     
-    var email: String
-    var phoneNumber: String
+    let email: String
+    let phoneNumber: String
     
     var fullName: String {
         
@@ -33,8 +33,6 @@ struct Person: Identifiable {
                                 phoneNumber: DataStore.shared.phoneNumber.randomElement() ?? "")
             contacts.append(person)
         }
-        
-        print(contacts)
         
         return contacts
     }

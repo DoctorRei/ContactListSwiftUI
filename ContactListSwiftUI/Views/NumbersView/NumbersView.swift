@@ -9,11 +9,11 @@ import SwiftUI
 
 struct NumbersView: View {
     
-    let person = Person.getContactList()
+    let contact: [Person]
     
     var body: some View {
         NavigationStack {
-            List(person) { contact in
+            List(contact) { contact in
                 Section(contact.fullName) {
                     HStack {
                         Image(systemName: "envelope")
@@ -29,11 +29,5 @@ struct NumbersView: View {
             }
             .navigationTitle("Contact List")
         }
-    }
-}
-
-struct NumbersView_Previews: PreviewProvider {
-    static var previews: some View {
-        NumbersView()
     }
 }

@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContactsView: View {
     
-    let contacts = Person.getContactList()
+    let contact: [Person]
     
     var body: some View {
         
         NavigationStack {
             VStack {
-                List(contacts) { contact in
+                List(contact) { contact in
                     NavigationLink(destination: ContactInfoView(contact: contact)) { //  тут мы указываем куда идем
-                        ContactRowView(person: contact) // тут у нас вьюха с настроенным текстом для таблицы для этого табличного представления.
+                        ContactRowView(contact: contact) // тут у нас вьюха с настроенным текстом для таблицы для этого табличного представления.
                     }
                 }
             }
@@ -25,10 +25,3 @@ struct ContactsView: View {
         }
     }
 }
-
-struct ContactsView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContactsView()
-    }
-}
-

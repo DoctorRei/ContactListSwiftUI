@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactInfoView: View {
     
-    var contact: Person
+    let contact: Person
     
     var body: some View {
         List {

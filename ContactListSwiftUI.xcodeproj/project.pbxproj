@@ -67,6 +67,7 @@
 				E997BD9D2AEC2E5900B866D4 /* ContentView.swift */,
 				E997BDB42AEC314100B866D4 /* Views */,
 				E997BDAB2AEC2EE300B866D4 /* Services */,
+				E9A010222AED2B16005CF40E /* Model */,
 				E997BD9F2AEC2E5A00B866D4 /* Assets.xcassets */,
 				E997BDA12AEC2E5A00B866D4 /* Preview Content */,
 			);
@@ -85,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				E997BDA92AEC2ED900B866D4 /* DataStore.swift */,
-				E997BDB72AEC333600B866D4 /* PersonDetails.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -93,12 +93,36 @@
 		E997BDB42AEC314100B866D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E9A010232AED2C69005CF40E /* ContactViews */,
+				E9A010242AED2C78005CF40E /* NumbersView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9A010222AED2B16005CF40E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E997BDB72AEC333600B866D4 /* PersonDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E9A010232AED2C69005CF40E /* ContactViews */ = {
+			isa = PBXGroup;
+			children = (
 				E997BDB02AEC312D00B866D4 /* ContactsView.swift */,
 				E997BDB92AEC40DD00B866D4 /* ContactRowView.swift */,
 				E997BDB52AEC32CD00B866D4 /* ContactInfoView.swift */,
+			);
+			path = ContactViews;
+			sourceTree = "<group>";
+		};
+		E9A010242AED2C78005CF40E /* NumbersView */ = {
+			isa = PBXGroup;
+			children = (
 				E997BDB22AEC313700B866D4 /* NumbersView.swift */,
 			);
-			path = Views;
+			path = NumbersView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -16,7 +16,7 @@
 		E997BDB32AEC313700B866D4 /* NumbersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997BDB22AEC313700B866D4 /* NumbersView.swift */; };
 		E997BDB62AEC32CD00B866D4 /* ContactInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997BDB52AEC32CD00B866D4 /* ContactInfoView.swift */; };
 		E997BDB82AEC333600B866D4 /* PersonDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997BDB72AEC333600B866D4 /* PersonDetails.swift */; };
-		E997BDBA2AEC40DD00B866D4 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997BDB92AEC40DD00B866D4 /* ContactListView.swift */; };
+		E997BDBA2AEC40DD00B866D4 /* ContactRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E997BDB92AEC40DD00B866D4 /* ContactRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		E997BDB22AEC313700B866D4 /* NumbersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersView.swift; sourceTree = "<group>"; };
 		E997BDB52AEC32CD00B866D4 /* ContactInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoView.swift; sourceTree = "<group>"; };
 		E997BDB72AEC333600B866D4 /* PersonDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetails.swift; sourceTree = "<group>"; };
-		E997BDB92AEC40DD00B866D4 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
+		E997BDB92AEC40DD00B866D4 /* ContactRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				E997BDB02AEC312D00B866D4 /* ContactsView.swift */,
-				E997BDB92AEC40DD00B866D4 /* ContactListView.swift */,
+				E997BDB92AEC40DD00B866D4 /* ContactRowView.swift */,
 				E997BDB22AEC313700B866D4 /* NumbersView.swift */,
 				E997BDB52AEC32CD00B866D4 /* ContactInfoView.swift */,
 			);
@@ -174,7 +174,7 @@
 				E997BD9E2AEC2E5900B866D4 /* ContentView.swift in Sources */,
 				E997BDB32AEC313700B866D4 /* NumbersView.swift in Sources */,
 				E997BDAA2AEC2ED900B866D4 /* DataStore.swift in Sources */,
-				E997BDBA2AEC40DD00B866D4 /* ContactListView.swift in Sources */,
+				E997BDBA2AEC40DD00B866D4 /* ContactRowView.swift in Sources */,
 				E997BD9C2AEC2E5900B866D4 /* ContactListSwiftUIApp.swift in Sources */,
 				E997BDB12AEC312D00B866D4 /* ContactsView.swift in Sources */,
 				E997BDB62AEC32CD00B866D4 /* ContactInfoView.swift in Sources */,

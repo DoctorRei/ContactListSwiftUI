@@ -13,21 +13,22 @@ struct ContactsView: View {
     
     var body: some View {
         
-        List(contacts) {
-            Text($0.fullName)
-        }
-        
-        
-//        List(contacts) { contact in
-//            NavigationLink(destination: ContactInfoView(contact: contact)) {
-//                ContactListView(person: contact)
-//            }
-//        }
-    }
-    
-    struct ContactsView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContactsView()
+        NavigationStack {
+            VStack {
+                List(contacts) { contact in
+                    NavigationLink(destination: ContactInfoView(contact: contact)) { //  тут мы указываем куда идем
+                        ContactRowView(person: contact) // тут у нас вьюха с настроенным текстом для таблицы для этого табличного представления.
+                    }
+                }
+            }
+            .navigationTitle("Contact List")
         }
     }
 }
+
+struct ContactsView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactsView()
+    }
+}
+

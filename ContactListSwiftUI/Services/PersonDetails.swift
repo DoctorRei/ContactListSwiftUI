@@ -26,7 +26,7 @@ struct Person: Identifiable {
     static func getContactList() -> [Person] {
         var contacts: [Person] = []
         
-        for _ in 1...5 {
+        for _ in 1...10 {
             let person = Person(name: DataStore.shared.name.randomElement() ?? "",
                                 seccondName: DataStore.shared.seccondName.randomElement() ?? "",
                                 email: DataStore.shared.email.randomElement() ?? "",

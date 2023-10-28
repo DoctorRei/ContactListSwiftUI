@@ -8,8 +8,27 @@
 import SwiftUI
 
 struct NumbersView: View {
+    
+    let person = Person.getContactList()
+    
     var body: some View {
-        Text("NUMBERS")
+        NavigationStack {
+            List(person) { contact in
+                Section(contact.fullName) {
+                    HStack {
+                        Image(systemName: "envelope")
+                            .foregroundColor(.blue)
+                        Text(contact.email)
+                    }
+                    HStack {
+                        Image(systemName: "phone")
+                            .foregroundColor(.blue)
+                        Text(contact.phoneNumber)
+                    }
+                }
+            }
+            .navigationTitle("Contact List")
+        }
     }
 }
 
